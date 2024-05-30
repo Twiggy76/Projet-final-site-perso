@@ -1,0 +1,197 @@
+/* Couleurs */
+
+body {
+    background-color: #bed2e6;
+    /* Couleur de fond clair */
+    color: hsl(0, 0%, 20%);
+    margin: 0;
+    /* Couleur de texte sombre */
+}
+
+h1,
+h2,
+h3 {
+    color: hsl(294, 83%, 55%);
+    text-decoration: underline;
+    /* Couleur de titre principale */
+}
+
+a {
+    color: aqua;
+    /* Couleur de lien */
+}
+
+/* Typographie */
+
+body {
+    font-family: 'Arial', sans-serif;
+    /* Police de caractères standard */
+}
+
+h1 {
+    font-family: 'Roboto', sans-serif;
+    /* Police de caractères pour les titres */
+    font-size: 2.5em;
+    margin-bottom: 1.5em;
+    color: aqua;
+}
+
+h2 {
+    font-size: 1.8em;
+    margin-bottom: 1.5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h3 {
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+}
+
+p {
+    line-height: 1.5;
+    margin-bottom: 1em;
+}
+
+/* Mise en page avec Flexbox */
+
+header {
+    display: flex;
+    /* Activer Flexbox pour l'en-tête */
+    justify-content: space-between;
+    /* Distribuer les éléments horizontalement */
+    align-items: start;
+    /* Aligner les éléments verticalement */
+    padding: 20px;
+    background-color: #ffffff;
+    /* Couleur de fond blanc */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    /* Ombre portée subtile */
+    background-image: url("Img/Nav.jpg");
+        /* URL de votre image */
+        background-repeat: no-repeat;
+        /* Répétition de l'image (ne pas répéter ici) */
+        background-position: center;
+        /* Positionnement central de l'image */
+        a:hover {
+            transition: all 0s ease;
+            color: hsl(294, 83%, 55%);
+        }
+}
+
+nav ul {
+    list-style: none;
+    /* Supprimer les puces des listes */
+    margin: 0;
+    /* Supprimer le margin par défaut */
+    padding: 0;
+    /* Supprimer le padding par défaut */
+}
+
+nav ul li {
+    display: inline-block;
+    /* Afficher les éléments de la liste en ligne */
+    margin-right: 20px;
+    /* Espace entre les éléments de la liste */
+}
+nav a i {margin-right: 5px;}
+
+.main {
+    display: flex;
+    /* Activer Flexbox pour le contenu principal */
+    flex-direction: column;
+    /* Organiser les éléments verticalement */
+    width: 80%;
+    /* Prendre 80% de la largeur de l'écran */
+    margin: 0 auto;
+    /* Centrer le contenu principal horizontalement */
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 20px;
+    padding: 30px 20px 30px 20px;
+
+    /* Espace entre les sections */
+}
+
+section h2 {
+    margin-top: 0;
+    /* Supprimer le margin supérieur par défaut */
+}
+
+/* Icônes */
+
+.icon {
+    width: 24px;
+    /* Taille des icônes */
+    height: 24px;
+    fill: #4285f4;
+    /* Couleur des icônes */
+    margin-right: 5px;
+    /* Espace après l'icône */
+}
+
+/* Responsive Design (Media Queries) */
+
+@media screen and (max-width: 768px) {
+    .main {
+        flex-direction: row;
+        /* Organiser les éléments horizontalement sur les petits écrans */
+        flex-wrap: wrap;
+        /* Permettre aux éléments de passer à la ligne */
+    }
+
+    .section {
+        width: 50%;
+        /* Prendre 50% de la largeur de l'écran pour chaque section */
+        margin-bottom: 10px;
+        /* Réduire l'espace entre les sections */
+    }
+}
+#image-grid{
+    display: flex; 
+    justify-content: space-between;
+
+}
+#image-grid img{
+    width: 30%;
+    object-fit: cover;
+    border:5px solid;
+    border-color: hsl(304, 91%, 60%);
+}
+footer {
+    background-color: hsl(304, 87%, 66%);
+        padding: 5px;
+        text-align: center;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+}
+#contact {
+    margin-bottom: 100px;
+}
+#experience, #services {background-color: #8bb5df;
+
+}
+#retourHaut {
+    position: fixed;
+    /* Fixe le bouton en bas de la page */
+    bottom: 20px;
+    /* Marge entre le bouton et le bas de la page */
+    right: 20px;
+    /* Marge entre le bouton et le bord droit de la page */
+    background-color: #007bff;
+    /* Couleur de fond du bouton */
+    color: #fff;
+    /* Couleur du texte du bouton */
+    border: none;
+    /* Supprime la bordure par défaut du bouton */
+    padding: 10px 15px;
+    /* Espacement entre le texte et les bords du bouton */
+    cursor: pointer;
+    /* Indique que le bouton est cliquable */
+    z-index: 100;
+    /* Garantit que le bouton est visible au-dessus d'autres éléments */
+}
